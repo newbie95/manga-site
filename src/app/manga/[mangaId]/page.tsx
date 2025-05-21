@@ -107,7 +107,7 @@ export default function MangaViewerPage() {
   if (manga === null) {
     return (
       <div className="flex flex-col items-center justify-center flex-1 p-4">
-        <Card className="w-full max-w-md shadow-lg">
+        <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-destructive mb-4" />
             <CardTitle className="text-2xl">Manga Not Found</CardTitle>
@@ -128,7 +128,7 @@ export default function MangaViewerPage() {
   if (!currentChapter && manga.chapters.length > 0) {
      return (
       <div className="flex flex-col items-center justify-center flex-1 p-4">
-        <Card className="w-full max-w-md shadow-lg">
+        <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-destructive mb-4" />
             <CardTitle className="text-2xl">Chapter Not Found</CardTitle>
@@ -161,7 +161,7 @@ export default function MangaViewerPage() {
   if (manga.chapters.length === 0) {
     return (
        <div className="flex flex-col items-center justify-center flex-1 p-4">
-        <Card className="w-full max-w-md shadow-lg">
+        <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-muted-foreground mb-4" />
             <CardTitle className="text-2xl">No Chapters Available</CardTitle>
@@ -183,8 +183,8 @@ export default function MangaViewerPage() {
 
   return (
     <div className="flex flex-col flex-1 bg-background">
-      {/* Manga Info Header */}
-      <header className="p-4 bg-sidebar-background text-sidebar-foreground shadow-sm border-b border-sidebar-border">
+      {/* Manga Info Header - Updated to use theme background and border */}
+      <header className="p-4 bg-background text-foreground shadow-sm border-b border-border">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <h1 className="text-xl md:text-2xl font-semibold truncate" title={manga.title}>{manga.title}</h1>
           {currentChapter && <h2 className="text-md md:text-lg truncate" title={currentChapter.title}>{currentChapter.title}</h2>}

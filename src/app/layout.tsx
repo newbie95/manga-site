@@ -1,11 +1,8 @@
 import type {Metadata} from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { SidebarProvider, Sidebar, SidebarInset, SidebarTrigger } from '@/components/ui/sidebar';
-import AppSidebar from '@/components/AppSidebar';
+import AppHeader from '@/components/AppHeader'; // New Header
 import { Toaster } from "@/components/ui/toaster";
-import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -18,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Manga Static Reader',
+  title: 'MangaToon Reader', // Updated title
   description: 'Read your favorite manga titles seamlessly.',
 };
 
@@ -29,22 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}>
-        <SidebarProvider defaultOpen>
-          <Sidebar>
-            <AppSidebar />
-          </Sidebar>
-          <SidebarInset>
-            <div className="md:hidden p-2 fixed top-0 left-0 z-50">
-                <SidebarTrigger asChild>
-                  <Button variant="ghost" size="icon"><Menu /></Button>
-                </SidebarTrigger>
-            </div>
-            <div className="pt-12 md:pt-0 flex flex-col flex-1 w-full">
-              {children}
-            </div>
-          </SidebarInset>
-        </SidebarProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans flex flex-col min-h-screen`}>
+        <AppHeader />
+        <main className="flex-1 w-full container mx-auto px-4 py-8">
+          {children}
+        </main>
         <Toaster />
       </body>
     </html>
