@@ -4,37 +4,10 @@ import { Button } from "@/components/ui/button";
 import { ALL_MANGA, type Manga } from "@/lib/manga-data";
 import Image from "next/image";
 import Link from "next/link";
-// LibraryBig icon is removed as the global header handles branding.
 
 export default function Home() {
-  // Placeholder for carousel data
-  const carouselItems = ALL_MANGA.slice(0, 3).map(manga => ({
-    id: manga.id,
-    title: manga.title,
-    imageUrl: manga.coverImageUrl, // Or a dedicated banner image if available
-    dataAiHint: "manga banner"
-  }));
-
   return (
     <div className="flex flex-col space-y-12">
-      {/* Placeholder for Carousel - To be implemented later */}
-      <section aria-labelledby="carousel-heading" className="bg-muted/50 p-8 rounded-lg shadow">
-        <h2 id="carousel-heading" className="sr-only">Featured Manga</h2>
-        <div className="text-center text-foreground py-16">
-          <p className="text-2xl font-semibold">Image Carousel / Banner Area</p>
-          <p className="text-muted-foreground">Displaying: {carouselItems.map(item => item.title).join(', ')}</p>
-          {/* Basic representation of carousel items */}
-          <div className="mt-4 flex justify-center space-x-4">
-            {carouselItems.map(item => (
-              <div key={item.id} className="w-32 h-48 relative rounded overflow-hidden shadow-md">
-                <Image src={item.imageUrl} alt={item.title} layout="fill" objectFit="cover" data-ai-hint={item.dataAiHint} />
-              </div>
-            ))}
-          </div>
-           <div className="mt-4 text-sm text-muted-foreground">(Carousel functionality to be implemented)</div>
-        </div>
-      </section>
-
       <section aria-labelledby="library-heading">
         <header className="mb-6">
           <h2 id="library-heading" className="text-2xl font-bold text-foreground">

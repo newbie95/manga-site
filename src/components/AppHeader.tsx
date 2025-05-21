@@ -2,7 +2,7 @@
 "use client";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Search, ChevronDown, Menu as MenuIcon } from 'lucide-react'; // Added MenuIcon for mobile
+import { Search, Menu as MenuIcon } from 'lucide-react'; // Removed ChevronDown
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'; // For mobile nav
 import { useState } from 'react';
 
@@ -28,21 +28,16 @@ const MangaToonLogo = () => (
 export default function AppHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Simplified navigation links
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '#', label: 'Comics' }, // Placeholder href
-    { href: '#', label: 'NovelToon' },// Placeholder href
-    { href: '#', label: 'Booklist' },// Placeholder href
-    { href: '#', label: 'Contribute' },// Placeholder href
-    { href: '#', label: 'Games' },// Placeholder href
-    { href: '#', label: 'Purchase Coins' },// Placeholder href
   ];
 
   const NavLinkItems = ({isMobile = false}: {isMobile?: boolean}) => (
     <>
       {navLinks.map((link) => (
         <Link key={link.label} href={link.href} legacyBehavior>
-          <a 
+          <a
             className={`text-foreground hover:text-primary transition-colors ${isMobile ? 'block py-2 text-lg' : 'text-sm'}`}
             onClick={() => isMobile && setMobileMenuOpen(false)}
           >
@@ -68,15 +63,11 @@ export default function AppHeader() {
 
         {/* Right: Actions (Desktop) */}
         <div className="hidden md:flex items-center space-x-3">
-          <Button variant="ghost" size="sm">Sign In</Button>
-          <Button variant="ghost" size="sm">History</Button>
-          <Button variant="ghost" size="sm" className="items-center">
-            English <ChevronDown className="ml-1 h-4 w-4" />
-          </Button>
           <Button variant="ghost" size="icon" className="h-9 w-9">
             <Search className="h-5 w-5" />
             <span className="sr-only">Search</span>
           </Button>
+          <Button variant="ghost" size="sm">Sign In</Button>
           <Button size="sm">Publish</Button>
         </div>
 
@@ -99,11 +90,7 @@ export default function AppHeader() {
                 </nav>
                 <div className="border-t border-border pt-6 flex flex-col space-y-3">
                   <Button variant="outline" size="sm" className="w-full justify-start">Sign In</Button>
-                  <Button variant="outline" size="sm" className="w-full justify-start">History</Button>
-                  <Button variant="outline" size="sm" className="w-full justify-start items-center">
-                    English <ChevronDown className="ml-auto h-4 w-4" />
-                  </Button>
-                   <Button variant="primary" size="sm" className="w-full">Publish</Button>
+                  <Button variant="primary" size="sm" className="w-full">Publish</Button>
                 </div>
                 <div className="relative mt-6">
                     <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
