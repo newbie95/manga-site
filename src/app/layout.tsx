@@ -40,7 +40,9 @@ export default function RootLayout({
                   <Button variant="ghost" size="icon"><Menu /></Button>
                 </SidebarTrigger>
             </div>
-            {children}
+            <div className="pt-12 md:pt-0 flex flex-col flex-1 w-full">
+              {children}
+            </div>
           </SidebarInset>
         </SidebarProvider>
         <Toaster />
