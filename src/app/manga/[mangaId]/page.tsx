@@ -98,7 +98,7 @@ export default function MangaViewerPage() {
 
   if (manga === undefined) {
     return (
-      <div className="flex flex-col items-center justify-center flex-1 p-4 text-lg">
+      <div className="flex flex-col items-center justify-center flex-1 p-4 text-lg text-muted-foreground">
         Loading manga...
       </div>
     );
@@ -183,11 +183,11 @@ export default function MangaViewerPage() {
 
   return (
     <div className="flex flex-col flex-1 bg-background">
-      {/* Manga Info Header - Updated to use theme background and border */}
+      {/* Manga Info Header */}
       <header className="p-4 bg-background text-foreground shadow-sm border-b border-border">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <h1 className="text-xl md:text-2xl font-semibold truncate" title={manga.title}>{manga.title}</h1>
-          {currentChapter && <h2 className="text-md md:text-lg truncate" title={currentChapter.title}>{currentChapter.title}</h2>}
+          {currentChapter && <h2 className="text-md md:text-lg truncate text-muted-foreground" title={currentChapter.title}>{currentChapter.title}</h2>}
         </div>
       </header>
 
@@ -254,7 +254,7 @@ export default function MangaViewerPage() {
             />
           </div>
         ) : (
-           totalPagesInChapter > 0 && <div className="text-muted-foreground">Loading page...</div>
+           totalPagesInChapter > 0 && <div className="text-muted-foreground text-lg">Loading page...</div>
         )}
          { totalPagesInChapter === 0 && currentChapter &&
           <div className="text-center p-8">

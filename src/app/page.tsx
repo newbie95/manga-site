@@ -11,7 +11,7 @@ export default function Home() {
       <section aria-labelledby="library-heading">
         <header className="mb-6">
           <h2 id="library-heading" className="text-2xl font-bold text-foreground">
-            Read with Editor {/* As per screenshot */}
+            Manga Library
           </h2>
           <p className="text-muted-foreground">Browse your collection of manga.</p>
         </header>
@@ -24,28 +24,28 @@ export default function Home() {
                   <Image
                     src={manga.coverImageUrl}
                     alt={`${manga.title} cover`}
-                    layout="fill"
-                    objectFit="cover"
+                    fill // Use fill with a sized parent
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
+                    className="object-cover rounded-t-lg"
                     data-ai-hint="manga cover"
-                    className="rounded-t-lg"
                   />
                 </div>
-                <CardContent className="p-4 flex flex-col flex-grow">
-                  <CardHeader className="p-0 mb-1">
-                    <CardTitle className="text-md font-semibold leading-tight line-clamp-2">{manga.title}</CardTitle>
-                    <CardDescription className="text-xs text-muted-foreground line-clamp-1">By {manga.author}</CardDescription>
-                  </CardHeader>
-                  <p className="text-xs text-muted-foreground mb-3 line-clamp-2 flex-grow min-h-[30px]">
+                <CardHeader className="p-4 pb-0">
+                  <CardTitle className="text-md font-semibold leading-tight line-clamp-2">{manga.title}</CardTitle>
+                  <CardDescription className="text-xs text-muted-foreground line-clamp-1">By {manga.author}</CardDescription>
+                </CardHeader>
+                <CardContent className="p-4 pt-2 flex-grow flex flex-col">
+                  <p className="text-xs text-muted-foreground line-clamp-3 flex-grow min-h-[calc(1.5em*3)]"> 
                     {manga.description}
                   </p>
-                  <CardFooter className="p-0 mt-auto">
-                    <Link href={`/manga/${manga.id}`} passHref legacyBehavior>
-                      <Button asChild size="sm" className="w-full">
-                        <a>Read Now</a>
-                      </Button>
-                    </Link>
-                  </CardFooter>
                 </CardContent>
+                <CardFooter className="p-4 pt-0 mt-auto">
+                  <Link href={`/manga/${manga.id}`} passHref legacyBehavior className="w-full">
+                    <Button asChild size="sm" className="w-full">
+                      <a>Read Now</a>
+                    </Button>
+                  </Link>
+                </CardFooter>
               </Card>
             ))}
           </div>
