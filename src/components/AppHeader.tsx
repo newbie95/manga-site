@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search, Menu as MenuIcon } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { useState } from 'react';
 
 const MangaReaderLogo = () => (
@@ -82,9 +82,12 @@ export default function AppHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background p-6 flex flex-col">
-              <div className="mb-6">
-                <MangaReaderLogo />
-              </div>
+              <SheetHeader className="mb-4"> {/* Added SheetHeader */}
+                <SheetTitle className="text-left"> {/* Added SheetTitle */}
+                  <MangaReaderLogo />
+                </SheetTitle>
+                {/* You could add a SheetDescription here if needed */}
+              </SheetHeader>
               <nav className="flex flex-col space-y-2 mb-6">
                 <NavLinkItems isMobile={true} />
               </nav>
