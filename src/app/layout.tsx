@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import AppHeader from '@/components/AppHeader'; // New Header
+import AppHeader from '@/components/AppHeader';
 import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'MangaToon Reader', // Updated title
-  description: 'Read your favorite manga titles seamlessly.',
+  title: 'MangaReader', // Updated title
+  description: 'Your ultimate destination for reading manga online.',
 };
 
 export default function RootLayout({
@@ -25,10 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans flex flex-col min-h-screen`}>
+    <html lang="en" className="dark"> {/* Apply dark class here */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans flex flex-col min-h-screen bg-background`}>
         <AppHeader />
-        <main className="flex-1 w-full container mx-auto px-4 py-8">
+        <main className="flex-1 w-full"> {/* Removed container and padding, pages will handle this */}
           {children}
         </main>
         <Toaster />

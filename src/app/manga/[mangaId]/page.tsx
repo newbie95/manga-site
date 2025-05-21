@@ -98,7 +98,7 @@ export default function MangaViewerPage() {
 
   if (manga === undefined) {
     return (
-      <div className="flex flex-col items-center justify-center flex-1 p-4 text-lg text-muted-foreground">
+      <div className="flex flex-col items-center justify-center flex-1 p-4 text-lg text-muted-foreground container mx-auto">
         Loading manga...
       </div>
     );
@@ -106,7 +106,7 @@ export default function MangaViewerPage() {
 
   if (manga === null) {
     return (
-      <div className="flex flex-col items-center justify-center flex-1 p-4">
+      <div className="flex flex-col items-center justify-center flex-1 p-4 container mx-auto">
         <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-destructive mb-4" />
@@ -127,7 +127,7 @@ export default function MangaViewerPage() {
   
   if (!currentChapter && manga.chapters.length > 0) {
      return (
-      <div className="flex flex-col items-center justify-center flex-1 p-4">
+      <div className="flex flex-col items-center justify-center flex-1 p-4 container mx-auto">
         <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-destructive mb-4" />
@@ -136,10 +136,10 @@ export default function MangaViewerPage() {
           <CardContent className="text-center">
             <p>The selected chapter could not be loaded. Please select another chapter.</p>
             <Select onValueChange={handleChapterChange} defaultValue={manga.chapters[0]?.id}>
-              <SelectTrigger className="w-full mt-4">
+              <SelectTrigger className="w-full mt-4 bg-secondary text-secondary-foreground">
                 <SelectValue placeholder="Select Chapter" />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="bg-popover text-popover-foreground">
                 {manga.chapters.map((chap) => (
                   <SelectItem key={chap.id} value={chap.id}>
                     {chap.title}
@@ -160,7 +160,7 @@ export default function MangaViewerPage() {
   
   if (manga.chapters.length === 0) {
     return (
-       <div className="flex flex-col items-center justify-center flex-1 p-4">
+       <div className="flex flex-col items-center justify-center flex-1 p-4 container mx-auto">
         <Card className="w-full max-w-md shadow-lg bg-card">
           <CardHeader className="items-center">
             <AlertTriangle className="w-16 h-16 text-muted-foreground mb-4" />
@@ -193,7 +193,7 @@ export default function MangaViewerPage() {
 
       {/* Navigation Controls */}
       {manga.chapters.length > 0 && totalPagesInChapter > 0 && (
-        <div className="bg-background p-3 border-b border-border shadow-sm">
+        <div className="bg-background/80 backdrop-blur-sm p-3 border-b border-border shadow-sm sticky top-16 z-40"> {/* Sticky below header */}
           <div className="container mx-auto">
             <div className="flex flex-col items-center gap-3">
               {/* Chapter Navigation */}
@@ -202,10 +202,10 @@ export default function MangaViewerPage() {
                   <SkipBack />
                 </Button>
                 <Select onValueChange={handleChapterChange} value={currentChapter?.id}>
-                  <SelectTrigger className="w-full sm:w-[200px] md:w-[300px] truncate">
+                  <SelectTrigger className="w-full sm:w-[200px] md:w-[300px] truncate bg-secondary text-secondary-foreground focus:ring-primary">
                     <SelectValue placeholder="Select Chapter" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-popover text-popover-foreground">
                     {manga.chapters.map((chap) => (
                       <SelectItem key={chap.id} value={chap.id}>
                         {chap.title}
@@ -236,7 +236,7 @@ export default function MangaViewerPage() {
       )}
 
       {/* Main Viewer Area */}
-      <main className="flex-grow overflow-y-auto flex items-center justify-center p-1 md:p-4 relative">
+      <main className="flex-grow overflow-y-auto flex items-center justify-center p-1 md:p-4 relative container mx-auto">
         {currentPage ? (
           <div className="relative w-full h-full flex items-center justify-center transition-opacity duration-300 ease-in-out"
                style={{ opacity: imageLoading ? 0.5 : 1 }}>
@@ -246,7 +246,7 @@ export default function MangaViewerPage() {
               alt={currentPage.altText}
               width={800} 
               height={1200}
-              className="max-w-full max-h-full h-auto object-contain shadow-lg rounded"
+              className="max-w-full max-h-[calc(100vh-10rem)] h-auto object-contain shadow-lg rounded" // Max height to prevent overflow with sticky nav
               priority={true}
               onLoad={() => setImageLoading(false)}
               onError={() => setImageLoading(false)} 
