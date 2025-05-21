@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo }_from_ 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { getMangaById, Manga as MangaType, MangaChapter, MangaPage } from '@/lib/manga-data';
