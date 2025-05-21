@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,25 +9,25 @@ body {
 
 @layer base {
   :root {
-    --background: 276 47% 97%; /* Light Lavender #F5EEF8 */
-    --foreground: 262 15% 20%; /* Dark Plum/Grey for text */
-    --card: 276 30% 95%;
-    --card-foreground: 262 15% 20%;
-    --popover: 276 30% 95%;
-    --popover-foreground: 262 15% 20%;
-    --primary: 262 40% 50%; /* Deep Plum #673AB7 */
-    --primary-foreground: 276 47% 97%; /* Light Lavender */
-    --secondary: 275 40% 85%; /* Lighter variant of Soft Purple */
-    --secondary-foreground: 262 15% 20%;
-    --muted: 276 20% 90%;
-    --muted-foreground: 262 10% 45%;
-    --accent: 275 47% 79%; /* Soft Purple #B19CD9 */
-    --accent-foreground: 262 15% 20%;
+    --background: 210 40% 98%; /* Light Slate 50 - #F8FAFC */
+    --foreground: 215 25% 27%; /* Slate 700 - #334155 */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 215 25% 27%; /* Slate 700 */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 215 25% 27%; /* Slate 700 */
+    --primary: 174 80% 40%; /* Teal 500 - #14B8A6 */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 170 75% 90%; /* Teal 100 - #CCFBF1 */
+    --secondary-foreground: 174 65% 22%; /* Teal 800 - #115E59 */
+    --muted: 210 40% 96.1%; /* Slate 100 - #F1F5F9 */
+    --muted-foreground: 215 20% 47%; /* Slate 500 - #64748B */
+    --accent: 170 75% 64%; /* Teal 400 - #5EEAD4 */
+    --accent-foreground: 174 83% 31%; /* Teal 600 - #0D9488 */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 275 20% 85%;
-    --input: 275 20% 85%;
-    --ring: 262 40% 50%; /* Deep Plum */
+    --border: 210 40% 91.2%; /* Slate 200 - #E2E8F0 */
+    --input: 210 40% 91.2%; /* Slate 200 - #E2E8F0 (used for input border) */
+    --ring: 174 80% 40%; /* Teal 500 */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -35,46 +36,46 @@ body {
     --radius: 0.5rem;
 
     /* Sidebar specific theme */
-    --sidebar-background: 276 25% 92%; /* Slightly more distinct lavender */
-    --sidebar-foreground: 262 15% 25%;
-    --sidebar-primary: 262 40% 50%; /* Deep Plum */
-    --sidebar-primary-foreground: 276 47% 97%; /* Light Lavender */
-    --sidebar-accent: 275 47% 79%; /* Soft Purple */
-    --sidebar-accent-foreground: 262 15% 20%;
-    --sidebar-border: 275 20% 80%;
-    --sidebar-ring: 262 40% 50%; /* Deep Plum */
+    --sidebar-background: 190 65% 22%; /* Dark Teal - #14535F */
+    --sidebar-foreground: 0 0% 94%; /* Light Grey/Off-white - #F0F0F0 */
+    --sidebar-primary: 174 80% 40%; /* Teal 500 */
+    --sidebar-primary-foreground: 0 0% 100%; /* white */
+    --sidebar-accent: 190 62% 30%; /* Lighter Dark Teal for hover/active - #1D6D7C */
+    --sidebar-accent-foreground: 0 0% 94%; /* Light Grey/Off-white */
+    --sidebar-border: 190 60% 25%; /* Slightly lighter than sidebar-background */
+    --sidebar-ring: 174 80% 40%; /* Teal 500 */
   }
 
   .dark {
-    /* Adding a basic dark theme, can be customized further if needed */
-    --background: 262 15% 10%; 
-    --foreground: 276 30% 90%;
-    --card: 262 15% 12%;
-    --card-foreground: 276 30% 90%;
-    --popover: 262 15% 12%;
-    --popover-foreground: 276 30% 90%;
-    --primary: 275 47% 79%; /* Soft Purple as primary in dark */
-    --primary-foreground: 262 15% 10%; 
-    --secondary: 262 20% 25%;
-    --secondary-foreground: 276 30% 90%;
-    --muted: 262 15% 20%;
-    --muted-foreground: 276 20% 60%;
-    --accent: 262 40% 50%; /* Deep Plum as accent in dark */
-    --accent-foreground: 276 30% 95%;
+    --background: 222 83% 5%; /* Slate 950 - #020817 */
+    --foreground: 210 40% 90%; /* Slate 200 - #E2E8F0 */
+    --card: 222 47% 11%; /* Slate 900 - #0F172A */
+    --card-foreground: 210 40% 90%; /* Slate 200 */
+    --popover: 222 47% 11%; /* Slate 900 */
+    --popover-foreground: 210 40% 90%; /* Slate 200 */
+    --primary: 170 75% 64%; /* Teal 400 - #5EEAD4 */
+    --primary-foreground: 192 75% 19%; /* Dark Teal for text on light teal primary - #0F4A58 */
+    --secondary: 222 39% 17%; /* Slate 800 - #1E293B */
+    --secondary-foreground: 210 29% 87%; /* Slate 300 - #CBD5E1 */
+    --muted: 222 39% 17%; /* Slate 800 */
+    --muted-foreground: 215 28% 65%; /* Slate 400 - #94A3B8 */
+    --accent: 174 80% 40%; /* Teal 500 - #14B8A6 */
+    --accent-foreground: 0 0% 100%; /* white */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 262 15% 25%;
-    --input: 262 15% 25%;
-    --ring: 275 47% 79%; /* Soft Purple for rings */
+    --border: 222 39% 17%; /* Slate 800 */
+    --input: 222 39% 17%; /* Slate 800 */
+    --ring: 170 75% 64%; /* Teal 400 */
     
-    --sidebar-background: 262 15% 12%;
-    --sidebar-foreground: 276 30% 85%;
-    --sidebar-primary: 275 47% 79%;
-    --sidebar-primary-foreground: 262 15% 10%;
-    --sidebar-accent: 262 40% 50%;
-    --sidebar-accent-foreground: 276 30% 95%;
-    --sidebar-border: 262 15% 20%;
-    --sidebar-ring: 275 47% 79%;
+    /* Sidebar specific theme (matches light mode as per reference) */
+    --sidebar-background: 190 65% 22%; /* Dark Teal - #14535F */
+    --sidebar-foreground: 0 0% 94%; /* Light Grey/Off-white - #F0F0F0 */
+    --sidebar-primary: 170 75% 64%; /* Teal 400 */
+    --sidebar-primary-foreground: 192 75% 19%; /* Dark Teal */
+    --sidebar-accent: 190 62% 30%; /* Lighter Dark Teal for hover/active - #1D6D7C */
+    --sidebar-accent-foreground: 0 0% 94%; /* Light Grey/Off-white */
+    --sidebar-border: 190 60% 25%; /* Slightly lighter than sidebar-background */
+    --sidebar-ring: 170 75% 64%; /* Teal 400 */
   }
 }
 

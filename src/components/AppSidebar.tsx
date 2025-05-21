@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -21,8 +22,8 @@ export default function AppSidebar() {
   return (
     <>
       <SidebarHeader className="p-4">
-        <Link href="/" className="flex items-center gap-2 hover:text-primary transition-colors">
-          <BookMarked className="w-8 h-8 text-primary" />
+        <Link href="/" className="flex items-center gap-2 text-sidebar-foreground">
+          <BookMarked className="w-8 h-8 text-sidebar-foreground" />
           <h1 className="text-xl font-semibold">Manga Reader</h1>
         </Link>
       </SidebarHeader>

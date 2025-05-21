@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect, useMemo } from 'react';
@@ -189,10 +190,10 @@ export default function MangaViewerPage() {
   return (
     <div className="flex flex-col h-screen pt-12 md:pt-0 bg-muted/40">
       {/* Manga Info Header */}
-      <header className="p-4 border-b bg-background shadow-sm">
+      <header className="p-4 bg-sidebar-background text-sidebar-foreground shadow-sm border-b border-sidebar-border">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-          <h1 className="text-xl md:text-2xl font-semibold truncate text-primary" title={manga.title}>{manga.title}</h1>
-          {currentChapter && <h2 className="text-md md:text-lg text-foreground truncate" title={currentChapter.title}>{currentChapter.title}</h2>}
+          <h1 className="text-xl md:text-2xl font-semibold truncate" title={manga.title}>{manga.title}</h1>
+          {currentChapter && <h2 className="text-md md:text-lg truncate" title={currentChapter.title}>{currentChapter.title}</h2>}
         </div>
       </header>
 
