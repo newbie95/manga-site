@@ -8,7 +8,7 @@ import { PanelLeft } from "lucide-react"
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
@@ -288,8 +288,8 @@ const SidebarTrigger = React.forwardRef<
 
   const buttonProps = {
     "data-sidebar": "trigger",
-    variant: "ghost",
-    size: "icon",
+    variant: "ghost" as any as  VariantProps<typeof buttonVariants>['variant'],
+    size: "icon" as any as  VariantProps<typeof buttonVariants>['size'],
     ...props, 
     className: cn("h-7 w-7", className),
     onClick: handleClick,

@@ -69,7 +69,7 @@ export default function AppHeader() {
           </div>
           <Button variant="secondary" size="sm" className="h-9 rounded-full">TR</Button>
           <Button variant="secondary" size="sm" className="h-9 rounded-full">Login</Button>
-          <Button variant="primary" size="sm" className="h-9 rounded-full">Register</Button>
+          <Button variant="default" size="sm" className="h-9 rounded-full">Register</Button>
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -102,7 +102,7 @@ export default function AppHeader() {
                 </div>
                 <Button variant="secondary" size="sm" className="w-full rounded-full">TR</Button>
                 <Button variant="secondary" size="sm" className="w-full rounded-full">Login</Button>
-                <Button variant="primary" size="sm" className="w-full rounded-full">Register</Button>
+                <Button variant="default" size="sm" className="w-full rounded-full">Register</Button>
               </div>
             </SheetContent>
           </Sheet>
