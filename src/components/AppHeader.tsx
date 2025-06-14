@@ -18,12 +18,7 @@ export default function AppHeader() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '#', label: 'Calendar' },
-    { href: '#', label: 'Categories' },
-    { href: '#', label: 'Bookmarks' },
     { href: '#', label: 'Announcements' },
-    { href: '#', label: 'FAQ' },
-    { href: '#', label: 'Mobile' },
   ];
 
   const NavLinkItems = ({ isMobile = false }: { isMobile?: boolean }) => (
@@ -67,9 +62,8 @@ export default function AppHeader() {
               className="w-full rounded-full bg-secondary border-border pl-10 pr-3 py-2 text-sm h-9 focus:ring-primary focus:border-primary"
             />
           </div>
-          <Button variant="secondary" size="sm" className="h-9 rounded-full">TR</Button>
-          <Button variant="secondary" size="sm" className="h-9 rounded-full">Login</Button>
-          <Button variant="default" size="sm" className="h-9 rounded-full">Register</Button>
+          {/* <Button variant="secondary" size="sm" className="h-9 rounded-full">Login</Button> */}
+          {/* <Button variant="default" size="sm" className="h-9 rounded-full">Register</Button> */}
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -100,7 +94,6 @@ export default function AppHeader() {
                     className="w-full rounded-full bg-secondary border-border pl-10 pr-3 py-2 text-sm h-9"
                   />
                 </div>
-                <Button variant="secondary" size="sm" className="w-full rounded-full">TR</Button>
                 <Button variant="secondary" size="sm" className="w-full rounded-full">Login</Button>
                 <Button variant="default" size="sm" className="w-full rounded-full">Register</Button>
               </div>

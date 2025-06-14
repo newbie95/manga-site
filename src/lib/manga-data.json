@@ -1,0 +1,197 @@
+[
+  {
+    "id": "aot",
+    "title": "Aot",
+    "coverImageUrl": "/assets/stories/aot/Content_Attack on Titan_poster.jpg",
+    "author": "Unknown Author",
+    "description": "Read aot manga online",
+    "chapters": [
+      {
+        "id": "chapter-2",
+        "title": "Chapter 2",
+        "pages": [
+          {
+            "id": "1",
+            "imageUrl": "/assets/stories/aot/chapter-2/1.jpg",
+            "altText": "aot - chapter-2, Page 1"
+          },
+          {
+            "id": "3",
+            "imageUrl": "/assets/stories/aot/chapter-2/3.jpg",
+            "altText": "aot - chapter-2, Page 2"
+          },
+          {
+            "id": "4",
+            "imageUrl": "/assets/stories/aot/chapter-2/4.jpg",
+            "altText": "aot - chapter-2, Page 3"
+          },
+          {
+            "id": "5",
+            "imageUrl": "/assets/stories/aot/chapter-2/5.jpg",
+            "altText": "aot - chapter-2, Page 4"
+          },
+          {
+            "id": "6",
+            "imageUrl": "/assets/stories/aot/chapter-2/6.jpg",
+            "altText": "aot - chapter-2, Page 5"
+          },
+          {
+            "id": "7",
+            "imageUrl": "/assets/stories/aot/chapter-2/7.jpg",
+            "altText": "aot - chapter-2, Page 6"
+          },
+          {
+            "id": "8",
+            "imageUrl": "/assets/stories/aot/chapter-2/8.jpg",
+            "altText": "aot - chapter-2, Page 7"
+          },
+          {
+            "id": "9",
+            "imageUrl": "/assets/stories/aot/chapter-2/9.jpg",
+            "altText": "aot - chapter-2, Page 8"
+          },
+          {
+            "id": "10",
+            "imageUrl": "/assets/stories/aot/chapter-2/10.jpg",
+            "altText": "aot - chapter-2, Page 9"
+          },
+          {
+            "id": "11",
+            "imageUrl": "/assets/stories/aot/chapter-2/11.jpg",
+            "altText": "aot - chapter-2, Page 10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chainsawman",
+    "title": "Chainsawman",
+    "coverImageUrl": "/assets/stories/chainsawman/thumbnail.jpeg",
+    "author": "Unknown Author",
+    "description": "Read chainsawman manga online",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Chapter 1",
+        "pages": [
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_0",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_0.jpg",
+            "altText": "chainsawman - chapter-1, Page 1"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_1",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_1.jpg",
+            "altText": "chainsawman - chapter-1, Page 2"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_10",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_10.jpg",
+            "altText": "chainsawman - chapter-1, Page 3"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_11",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_11.jpg",
+            "altText": "chainsawman - chapter-1, Page 4"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_12",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_12.jpg",
+            "altText": "chainsawman - chapter-1, Page 5"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_13",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_13.jpg",
+            "altText": "chainsawman - chapter-1, Page 6"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_14 (1)",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_14 (1).jpg",
+            "altText": "chainsawman - chapter-1, Page 7"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_14",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_14.jpg",
+            "altText": "chainsawman - chapter-1, Page 8"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_15",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_15.jpg",
+            "altText": "chainsawman - chapter-1, Page 9"
+          },
+          {
+            "id": "Content_Chainsaw Man_chapters_Chapter 1 Official Colored_16",
+            "imageUrl": "/assets/stories/chainsawman/chapter-1/Content_Chainsaw Man_chapters_Chapter 1 Official Colored_16.jpg",
+            "altText": "chainsawman - chapter-1, Page 10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "one-punch-man",
+    "title": "One Punch Man",
+    "coverImageUrl": "/assets/stories/one-punch-man/Content_One Punch_poster.jpg",
+    "author": "Unknown Author",
+    "description": "Read one-punch-man manga online",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Chapter 1",
+        "pages": [
+          {
+            "id": "Content_One Punch_chapters_One Punch_0",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_0.webp",
+            "altText": "one-punch-man - chapter-1, Page 1"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_1",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_1.webp",
+            "altText": "one-punch-man - chapter-1, Page 2"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_2",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_2.webp",
+            "altText": "one-punch-man - chapter-1, Page 3"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_4",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_4.webp",
+            "altText": "one-punch-man - chapter-1, Page 4"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_5",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_5.webp",
+            "altText": "one-punch-man - chapter-1, Page 5"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_6",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_6.webp",
+            "altText": "one-punch-man - chapter-1, Page 6"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_7",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_7.webp",
+            "altText": "one-punch-man - chapter-1, Page 7"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_8",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_8.webp",
+            "altText": "one-punch-man - chapter-1, Page 8"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_10",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_10.webp",
+            "altText": "one-punch-man - chapter-1, Page 9"
+          },
+          {
+            "id": "Content_One Punch_chapters_One Punch_11",
+            "imageUrl": "/assets/stories/one-punch-man/chapter-1/Content_One Punch_chapters_One Punch_11.webp",
+            "altText": "one-punch-man - chapter-1, Page 10"
+          }
+        ]
+      }
+    ]
+  }
+]

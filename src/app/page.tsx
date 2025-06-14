@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ALL_MANGA, type Manga } from "@/lib/manga-data";
 import Image from "next/image";
@@ -50,14 +49,6 @@ const MangaSeriesRow = ({ title, mangas }: { title: string, mangas: Manga[] }) =
               </div>
             </Link>
           ))}
-           {/* Placeholder cards for scroll visualization */}
-           {Array.from({ length: 5 }).map((_, i) => (
-             <div key={`placeholder-${i}`} className="block flex-shrink-0 w-36 md:w-40">
-              <div className="relative aspect-[2/3] w-full overflow-hidden rounded-md bg-secondary/30">
-                 <Image src="https://placehold.co/200x300.png" alt="placeholder" fill className="object-cover opacity-50" data-ai-hint="manga cover"/>
-              </div>
-             </div>
-           ))}
         </div>
       </div>
     </section>
@@ -73,12 +64,11 @@ export default function Home() {
       {heroManga && (
         <section className="relative w-full h-[60vh] md:h-[70vh] text-foreground">
           <Image
-            src="https://placehold.co/1920x1080.png" // Replace with actual hero image
-            alt="Hero background"
+            src={heroManga.coverImageUrl}
+            alt={`${heroManga.title} hero background`}
             fill
             className="object-cover z-0"
             priority
-            data-ai-hint="dark abstract anime"
           />
           <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark overlay */}
           <div className="container mx-auto px-4 relative z-20 h-full flex flex-col justify-center items-start max-w-3xl">
