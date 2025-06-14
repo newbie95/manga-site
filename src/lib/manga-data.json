@@ -130,6 +130,46 @@
     ]
   },
   {
+    "id": "ft-v1",
+    "title": "Ft V1",
+    "coverImageUrl": "/assets/stories/ft-v1/thumbnail.png",
+    "author": "Unknown Author",
+    "description": "Read ft-v1 manga online",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Chapter 1",
+        "pages": [
+          {
+            "id": "dash-img-1749546645624",
+            "imageUrl": "/assets/stories/ft-v1/chapter-1/dash-img-1749546645624.png",
+            "altText": "ft-v1 - chapter-1, Page 1"
+          },
+          {
+            "id": "dash-img-1749546646819",
+            "imageUrl": "/assets/stories/ft-v1/chapter-1/dash-img-1749546646819.png",
+            "altText": "ft-v1 - chapter-1, Page 2"
+          },
+          {
+            "id": "dash-img-1749546648182",
+            "imageUrl": "/assets/stories/ft-v1/chapter-1/dash-img-1749546648182.png",
+            "altText": "ft-v1 - chapter-1, Page 3"
+          },
+          {
+            "id": "dash-img-1749546649639",
+            "imageUrl": "/assets/stories/ft-v1/chapter-1/dash-img-1749546649639.png",
+            "altText": "ft-v1 - chapter-1, Page 4"
+          },
+          {
+            "id": "dash-img-1749546651092",
+            "imageUrl": "/assets/stories/ft-v1/chapter-1/dash-img-1749546651092.png",
+            "altText": "ft-v1 - chapter-1, Page 5"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "one-punch-man",
     "title": "One Punch Man",
     "coverImageUrl": "/assets/stories/one-punch-man/Content_One Punch_poster.jpg",

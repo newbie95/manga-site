@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { Manga, MangaChapter, MangaPage } from './src/lib/manga-data';
 
-const STORIES_PATH = path.join(process.cwd(), 'src', 'assets', 'stories');
+const STORIES_PATH = path.join(process.cwd(), 'public', 'assets', 'stories');
 
 interface ChapterFiles {
   pages: string[];
